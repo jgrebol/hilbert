@@ -1,0 +1,20 @@
+package:
+   name: hilbert
+   version: 0.1
+
+source:
+   path: .
+
+build:
+   noarch: python
+   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+
+requirements:
+   host:
+      - python
+      - pip
+        
+run:
+   - python
+                                                        
+
